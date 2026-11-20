@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: repro
+      POSTGRES_PASSWORD: repro-only
+      POSTGRES_DB: repro
+    ports:
+      - "127.0.0.1:${REPRO_PG_PORT:-19082}:5432"
+    command: ["postgres", "-c", "log_statement=all", "-c", "log_line_prefix=%m [%p] "]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U repro -d repro"]
+      interval: 1s
+      timeout: 5s
+      retries: 30

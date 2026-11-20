@@ -1,0 +1,8 @@
+P1_CONTROL HR_SESSION_DML_-1 committed=true dropped=[]
+P1_COMPARE HR_SESSION_DML_0 pid=68 version=2 commands=0 active=0 terminal=false dropped=[]
+P1_COMPARE HR_SESSION_DML_1 pid=68 version=2 commands=0 active=0 terminal=false dropped=[]
+P1_COMPARE HR_SESSION_DML_2 pid=68 version=2 commands=0 active=0 terminal=false dropped=[]
+P1_CONTROL HR_SESSION_FLUSH_-1 committed=true dropped=[]
+P1_COMPARE HR_SESSION_FLUSH_0 pid=68 version=1 commands=0 active=0 terminal=false dropped=[]
+P1_COMPARE HR_SESSION_FLUSH_1 pid=68 version=1 commands=0 active=0 terminal=false dropped=[]
+P1_COMPARE HR_SESSION_FLUSH_2 pid=68 version=1 commands=0 active=0 terminal=false dropped=[]

@@ -1,0 +1,32 @@
+postgres-1  | 2026-11-20 15:07:09.719 UTC [139] LOG:  statement: BEGIN
+postgres-1  | 2026-11-20 15:07:09.889 UTC [139] LOG:  execute 0000000: update ledger_meta lmp1_0 set version=1 where lmp1_0.singleton=true
+postgres-1  | 2026-11-20 15:07:09.897 UTC [139] LOG:  execute 0000001: update ledger_meta lmp1_0 set version=2 where lmp1_0.singleton=true
+postgres-1  | 2026-11-20 15:07:09.898 UTC [139] LOG:  statement: COMMIT
+postgres-1  | 2026-11-20 15:07:09.956 UTC [139] LOG:  statement: BEGIN
+postgres-1  | 2026-11-20 15:07:09.958 UTC [139] LOG:  execute 0000000: update ledger_meta lmp1_0 set version=1 where lmp1_0.singleton=true
+postgres-1  | 2026-11-20 15:07:09.964 UTC [139] LOG:  statement: ROLLBACK
+postgres-1  | 2026-11-20 15:07:09.965 UTC [139] LOG:  execute 0000001: update ledger_meta lmp1_0 set version=2 where lmp1_0.singleton=true
+postgres-1  | 2026-11-20 15:07:10.267 UTC [139] LOG:  statement: BEGIN
+postgres-1  | 2026-11-20 15:07:10.269 UTC [139] LOG:  execute 0000000: update ledger_meta lmp1_0 set version=1 where lmp1_0.singleton=true
+postgres-1  | 2026-11-20 15:07:10.284 UTC [139] LOG:  statement: ROLLBACK
+postgres-1  | 2026-11-20 15:07:10.286 UTC [139] LOG:  execute 0000001: update ledger_meta lmp1_0 set version=2 where lmp1_0.singleton=true
+postgres-1  | 2026-11-20 15:07:10.525 UTC [139] LOG:  statement: BEGIN
+postgres-1  | 2026-11-20 15:07:10.527 UTC [139] LOG:  execute 0000000: update ledger_meta lmp1_0 set version=1 where lmp1_0.singleton=true
+postgres-1  | 2026-11-20 15:07:10.541 UTC [139] LOG:  statement: ROLLBACK
+postgres-1  | 2026-11-20 15:07:10.542 UTC [139] LOG:  execute 0000001: update ledger_meta lmp1_0 set version=2 where lmp1_0.singleton=true
+postgres-1  | 2026-11-20 15:07:10.769 UTC [139] LOG:  statement: BEGIN
+postgres-1  | 2026-11-20 15:07:10.856 UTC [139] LOG:  execute 0000003: insert into ledger_commands (is_alias,business_id,canonical_hash,generation,receipt,source_hash,source_namespace,source_record_id,source_system,command_id) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)
+postgres-1  | 2026-11-20 15:07:10.863 UTC [139] LOG:  execute 0000004: update ledger_meta set confirmations=$1,generation=$2,initialized=$3,initialized_at=$4,policy_version=$5,recorded_at=$6,report_currency=$7,singleton=$8,version=$9 where ledger_id=$10
+postgres-1  | 2026-11-20 15:07:10.866 UTC [139] LOG:  statement: COMMIT
+postgres-1  | 2026-11-20 15:07:10.883 UTC [139] LOG:  statement: BEGIN
+postgres-1  | 2026-11-20 15:07:10.888 UTC [139] LOG:  execute 0000003: insert into ledger_commands (is_alias,business_id,canonical_hash,generation,receipt,source_hash,source_namespace,source_record_id,source_system,command_id) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)
+postgres-1  | 2026-11-20 15:07:10.899 UTC [139] LOG:  statement: ROLLBACK
+postgres-1  | 2026-11-20 15:07:10.900 UTC [139] LOG:  execute 0000004: update ledger_meta set confirmations=$1,generation=$2,initialized=$3,initialized_at=$4,policy_version=$5,recorded_at=$6,report_currency=$7,singleton=$8,version=$9 where ledger_id=$10
+postgres-1  | 2026-11-20 15:07:11.130 UTC [139] LOG:  statement: BEGIN
+postgres-1  | 2026-11-20 15:07:11.134 UTC [139] LOG:  execute 0000003: insert into ledger_commands (is_alias,business_id,canonical_hash,generation,receipt,source_hash,source_namespace,source_record_id,source_system,command_id) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)
+postgres-1  | 2026-11-20 15:07:11.146 UTC [139] LOG:  statement: ROLLBACK
+postgres-1  | 2026-11-20 15:07:11.147 UTC [139] LOG:  execute 0000004: update ledger_meta set confirmations=$1,generation=$2,initialized=$3,initialized_at=$4,policy_version=$5,recorded_at=$6,report_currency=$7,singleton=$8,version=$9 where ledger_id=$10
+postgres-1  | 2026-11-20 15:07:11.379 UTC [139] LOG:  statement: BEGIN
+postgres-1  | 2026-11-20 15:07:11.383 UTC [139] LOG:  execute 0000003: insert into ledger_commands (is_alias,business_id,canonical_hash,generation,receipt,source_hash,source_namespace,source_record_id,source_system,command_id) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)
+postgres-1  | 2026-11-20 15:07:11.394 UTC [139] LOG:  statement: ROLLBACK
+postgres-1  | 2026-11-20 15:07:11.395 UTC [139] LOG:  execute 0000004: update ledger_meta set confirmations=$1,generation=$2,initialized=$3,initialized_at=$4,policy_version=$5,recorded_at=$6,report_currency=$7,singleton=$8,version=$9 where ledger_id=$10

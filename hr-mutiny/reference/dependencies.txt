@@ -1,0 +1,8 @@
+
+The following files have been resolved:
+   org.hibernate.reactive:hibernate-reactive-core:jar:5.1.0.Beta1:compile -- module org.hibernate.reactive.core [auto]
+   org.hibernate.orm:hibernate-core:jar:8.0.0.Beta4:compile -- module org.hibernate.orm.core [auto]
+   io.smallrye.reactive:mutiny:jar:3.3.1:compile -- module io.smallrye.mutiny
+   io.vertx:vertx-core:jar:5.2.3:compile -- module io.vertx.core
+   io.vertx:vertx-pg-client:jar:5.2.3:compile -- module io.vertx.sql.client.pg
+   io.quarkus:quarkus-hibernate-reactive:jar:4.0.0.CR1:compile -- module quarkus.hibernate.reactive (auto)

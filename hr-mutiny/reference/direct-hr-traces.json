@@ -1,0 +1,62 @@
+{
+  "HR_SESSION_DML_-1": [
+    "2026-11-20 01:38:13.198 UTC [68] LOG:  statement: BEGIN",
+    "2026-11-20 01:38:13.199 UTC [68] LOG:  execute 0000000: update ledger_meta lmp1_0 set version=1 where lmp1_0.singleton=true",
+    "2026-11-20 01:38:13.201 UTC [68] LOG:  execute 0000001: update ledger_meta lmp1_0 set version=2 where lmp1_0.singleton=true",
+    "2026-11-20 01:38:13.201 UTC [68] LOG:  statement: COMMIT"
+  ],
+  "HR_SESSION_DML_0": [
+    "2026-11-20 01:38:13.218 UTC [68] LOG:  statement: BEGIN",
+    "2026-11-20 01:38:13.219 UTC [68] LOG:  execute 0000000: update ledger_meta lmp1_0 set version=1 where lmp1_0.singleton=true",
+    "2026-11-20 01:38:13.233 UTC [68] LOG:  statement: ROLLBACK",
+    "2026-11-20 01:38:13.234 UTC [68] LOG:  execute 0000001: update ledger_meta lmp1_0 set version=2 where lmp1_0.singleton=true"
+  ],
+  "HR_SESSION_DML_1": [
+    "2026-11-20 01:38:13.461 UTC [68] LOG:  statement: BEGIN",
+    "2026-11-20 01:38:13.463 UTC [68] LOG:  execute 0000000: update ledger_meta lmp1_0 set version=1 where lmp1_0.singleton=true",
+    "2026-11-20 01:38:13.476 UTC [68] LOG:  statement: ROLLBACK",
+    "2026-11-20 01:38:13.477 UTC [68] LOG:  execute 0000001: update ledger_meta lmp1_0 set version=2 where lmp1_0.singleton=true"
+  ],
+  "HR_SESSION_DML_2": [
+    "2026-11-20 01:38:13.723 UTC [68] LOG:  statement: BEGIN",
+    "2026-11-20 01:38:13.724 UTC [68] LOG:  execute 0000000: update ledger_meta lmp1_0 set version=1 where lmp1_0.singleton=true",
+    "2026-11-20 01:38:13.737 UTC [68] LOG:  statement: ROLLBACK",
+    "2026-11-20 01:38:13.738 UTC [68] LOG:  execute 0000001: update ledger_meta lmp1_0 set version=2 where lmp1_0.singleton=true"
+  ],
+  "HR_SESSION_FLUSH_-1": [
+    "2026-11-20 01:38:13.964 UTC [68] LOG:  statement: BEGIN",
+    "2026-11-20 01:38:13.966 UTC [68] LOG:  execute 0000003: select lmp1_0.ledger_id,lmp1_0.confirmations,lmp1_0.generation,lmp1_0.initialized,lmp1_0.initialized_at,lmp1_0.policy_version,lmp1_0.recorded_at,lmp1_0.report_currency,lmp1_0.singleton,lmp1_0.version from ledger_meta lmp1_0",
+    "2026-11-20 01:38:13.968 UTC [68] LOG:  execute 0000004: insert into ledger_commands (is_alias,business_id,canonical_hash,generation,receipt,source_hash,source_namespace,source_record_id,source_system,command_id) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)",
+    "2026-11-20 01:38:13.968 UTC [68] DETAIL:  Parameters: $1 = 'f', $2 = '87d6c4a7-ab2d-48c4-9d8d-5a55603606d0', $3 = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', $4 = 'ead9dffe-5389-4937-8a54-3330c08c07ad', $5 = '{}', $6 = NULL, $7 = NULL, $8 = NULL, $9 = NULL, $10 = 'bd9b635a-789f-4cba-94e9-7fac17b05354'",
+    "2026-11-20 01:38:13.970 UTC [68] LOG:  execute 0000005: update ledger_meta set confirmations=$1,generation=$2,initialized=$3,initialized_at=$4,policy_version=$5,recorded_at=$6,report_currency=$7,singleton=$8,version=$9 where ledger_id=$10",
+    "2026-11-20 01:38:13.970 UTC [68] DETAIL:  Parameters: $1 = '{}', $2 = 'ead9dffe-5389-4937-8a54-3330c08c07ad', $3 = 'f', $4 = NULL, $5 = '0', $6 = NULL, $7 = 'CNY', $8 = 't', $9 = '1', $10 = '8f3c706f-d1c9-4bea-9b85-b4531a36ebe7'",
+    "2026-11-20 01:38:13.970 UTC [68] LOG:  statement: COMMIT"
+  ],
+  "HR_SESSION_FLUSH_0": [
+    "2026-11-20 01:38:13.990 UTC [68] LOG:  statement: BEGIN",
+    "2026-11-20 01:38:13.992 UTC [68] LOG:  execute 0000003: select lmp1_0.ledger_id,lmp1_0.confirmations,lmp1_0.generation,lmp1_0.initialized,lmp1_0.initialized_at,lmp1_0.policy_version,lmp1_0.recorded_at,lmp1_0.report_currency,lmp1_0.singleton,lmp1_0.version from ledger_meta lmp1_0",
+    "2026-11-20 01:38:13.994 UTC [68] LOG:  execute 0000004: insert into ledger_commands (is_alias,business_id,canonical_hash,generation,receipt,source_hash,source_namespace,source_record_id,source_system,command_id) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)",
+    "2026-11-20 01:38:13.994 UTC [68] DETAIL:  Parameters: $1 = 'f', $2 = '4b4b8966-ee77-4ffa-b45e-910adaec6a86', $3 = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', $4 = '3774ee76-bc89-46cc-9b6a-99f3ec72acb5', $5 = '{}', $6 = NULL, $7 = NULL, $8 = NULL, $9 = NULL, $10 = '0346ddd5-af64-41c7-8043-b425e8625b75'",
+    "2026-11-20 01:38:14.004 UTC [68] LOG:  statement: ROLLBACK",
+    "2026-11-20 01:38:14.006 UTC [68] LOG:  execute 0000005: update ledger_meta set confirmations=$1,generation=$2,initialized=$3,initialized_at=$4,policy_version=$5,recorded_at=$6,report_currency=$7,singleton=$8,version=$9 where ledger_id=$10",
+    "2026-11-20 01:38:14.006 UTC [68] DETAIL:  Parameters: $1 = '{}', $2 = '3774ee76-bc89-46cc-9b6a-99f3ec72acb5', $3 = 'f', $4 = NULL, $5 = '0', $6 = NULL, $7 = 'CNY', $8 = 't', $9 = '1', $10 = '4082aa26-bf68-4c73-ad51-e4ed7c046d3b'"
+  ],
+  "HR_SESSION_FLUSH_1": [
+    "2026-11-20 01:38:14.242 UTC [68] LOG:  statement: BEGIN",
+    "2026-11-20 01:38:14.244 UTC [68] LOG:  execute 0000003: select lmp1_0.ledger_id,lmp1_0.confirmations,lmp1_0.generation,lmp1_0.initialized,lmp1_0.initialized_at,lmp1_0.policy_version,lmp1_0.recorded_at,lmp1_0.report_currency,lmp1_0.singleton,lmp1_0.version from ledger_meta lmp1_0",
+    "2026-11-20 01:38:14.246 UTC [68] LOG:  execute 0000004: insert into ledger_commands (is_alias,business_id,canonical_hash,generation,receipt,source_hash,source_namespace,source_record_id,source_system,command_id) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)",
+    "2026-11-20 01:38:14.246 UTC [68] DETAIL:  Parameters: $1 = 'f', $2 = '67d4d856-9ffe-4dee-b38a-4829124efb97', $3 = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', $4 = 'b7fd2efd-deb1-49b1-9d15-2fc5ffff03be', $5 = '{}', $6 = NULL, $7 = NULL, $8 = NULL, $9 = NULL, $10 = 'c10351da-5cc8-4230-ba24-e24adb87a35e'",
+    "2026-11-20 01:38:14.257 UTC [68] LOG:  statement: ROLLBACK",
+    "2026-11-20 01:38:14.258 UTC [68] LOG:  execute 0000005: update ledger_meta set confirmations=$1,generation=$2,initialized=$3,initialized_at=$4,policy_version=$5,recorded_at=$6,report_currency=$7,singleton=$8,version=$9 where ledger_id=$10",
+    "2026-11-20 01:38:14.258 UTC [68] DETAIL:  Parameters: $1 = '{}', $2 = 'b7fd2efd-deb1-49b1-9d15-2fc5ffff03be', $3 = 'f', $4 = NULL, $5 = '0', $6 = NULL, $7 = 'CNY', $8 = 't', $9 = '1', $10 = '04cab340-bdb3-4f03-afa2-0942093e11cb'"
+  ],
+  "HR_SESSION_FLUSH_2": [
+    "2026-11-20 01:38:14.482 UTC [68] LOG:  statement: BEGIN",
+    "2026-11-20 01:38:14.484 UTC [68] LOG:  execute 0000003: select lmp1_0.ledger_id,lmp1_0.confirmations,lmp1_0.generation,lmp1_0.initialized,lmp1_0.initialized_at,lmp1_0.policy_version,lmp1_0.recorded_at,lmp1_0.report_currency,lmp1_0.singleton,lmp1_0.version from ledger_meta lmp1_0",
+    "2026-11-20 01:38:14.487 UTC [68] LOG:  execute 0000004: insert into ledger_commands (is_alias,business_id,canonical_hash,generation,receipt,source_hash,source_namespace,source_record_id,source_system,command_id) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)",
+    "2026-11-20 01:38:14.487 UTC [68] DETAIL:  Parameters: $1 = 'f', $2 = 'eaf06d95-7d4a-4e57-a17d-37fa89a8bd2e', $3 = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', $4 = '99abbe32-8fb7-4caa-9f52-747ffe3ba529', $5 = '{}', $6 = NULL, $7 = NULL, $8 = NULL, $9 = NULL, $10 = 'd4e63dc7-0f43-4837-829b-5291bd661616'",
+    "2026-11-20 01:38:14.497 UTC [68] LOG:  statement: ROLLBACK",
+    "2026-11-20 01:38:14.498 UTC [68] LOG:  execute 0000005: update ledger_meta set confirmations=$1,generation=$2,initialized=$3,initialized_at=$4,policy_version=$5,recorded_at=$6,report_currency=$7,singleton=$8,version=$9 where ledger_id=$10",
+    "2026-11-20 01:38:14.498 UTC [68] DETAIL:  Parameters: $1 = '{}', $2 = '99abbe32-8fb7-4caa-9f52-747ffe3ba529', $3 = 'f', $4 = NULL, $5 = '0', $6 = NULL, $7 = 'CNY', $8 = 't', $9 = '1', $10 = 'c525ba25-cfc7-4ccb-b7e6-c6ef662b5dd4'"
+  ]
+}
