@@ -1,6 +1,8 @@
 # Quarkus #58569 reproducers
 
-Two standalone reproductions of cancellation behavior reported in [Quarkus #58569](https://github.com/quarkusio/quarkus/issues/58569) and its [follow-up comment](https://github.com/quarkusio/quarkus/issues/58569#issuecomment-7043683036).
+An `@Transactional` method updates a counter and inserts a marker in the same transaction, so both writes should commit or roll back together. In the reported HTTP disconnect case, PostgreSQL rolled back the counter update, then executed the marker insert. An independent connection found the marker and the original counter value. [Quarkus issue #58569](https://github.com/quarkusio/quarkus/issues/58569) · [Follow-up observations](https://github.com/quarkusio/quarkus/issues/58569#issuecomment-7043683036)
+
+**Upstream status (2026-11-21).** The issue is open. Yoann Rodière reports that the test passes with his proposed Quarkus change, which is still a draft. A separate Mutiny draft explores forwarding cancellation upstream before asynchronous cleanup starts. Both changes are under discussion. [Quarkus PR #58598](https://github.com/quarkusio/quarkus/pull/58598) · [Mutiny PR #2251](https://github.com/smallrye/smallrye-mutiny/pull/2251)
 
 Both PostgreSQL tests use JDK 25 and the official Quarkus 4.0.0.CR1 BOM (Hibernate Reactive 5.1.0.Beta1, Hibernate ORM 8.0.0.Beta4, Vert.x 5.2.3 and Mutiny 3.3.1). The scripts require Bash and Maven Central access on the first run. The database tests use Docker Compose v2 and disposable PostgreSQL 17 on loopback.
 
